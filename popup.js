@@ -39,7 +39,7 @@ function pipe(...fns) {
 }
 
 function fixLineBreaks(text) {
-  return text.split('\n\n').map(par => par.replace(/\n/g, ' ')).join('\n\n');
+  return text.split('\n\n').map(par => par.replace(/\n/g, ' ')).join('\n');
 }
 
 function fixUTF8Entities(text) {
